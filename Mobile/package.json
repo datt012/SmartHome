@@ -1,0 +1,62 @@
+{
+  "name": "iot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "debug": "open 'rndebugger://set-debugger-loc?host=localhost&port=8097'",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-native-fontawesome": "^0.2.7",
+    "@react-native-community/datetimepicker": "^5.1.0",
+    "@react-native-picker/picker": "^2.2.1",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
+    "@react-navigation/stack": "^6.0.11",
+    "@reduxjs/toolkit": "^1.7.2",
+    "fortawesome": "^0.0.1-security",
+    "jwt-decode": "^3.1.2",
+    "link": "^0.1.5",
+    "prop-types": "^15.8.1",
+    "pusher-js": "^7.0.6",
+    "react": "17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.66.4",
+    "react-native-gesture-handler": "^2.1.1",
+    "react-native-link": "^4.1.0",
+    "react-native-modal-selector": "^2.1.0",
+    "react-native-popup-menu": "^0.15.12",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.1",
+    "react-native-svg": "^12.1.1",
+    "react-native-universal-picker": "^1.1.0",
+    "react-native-vector-icons": "^9.0.0",
+    "react-native-woodpicker": "^0.3.17",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "sp-react-native-mqtt": "^0.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "7.14.0",
+    "flow-bin": "^0.168.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-devtools": "^4.23.0",
+    "react-native-elements": "^3.4.2",
+    "react-native-paper": "^4.11.1",
+    "react-test-renderer": "17.0.2",
+    "remote-redux-devtools": "^0.5.16"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
