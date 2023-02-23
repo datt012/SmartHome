@@ -1,0 +1,29 @@
+{
+  "name": "Device",
+  "fields": [
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "ON,OFF"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pin",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "device",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20220206134159"
+}

@@ -1,0 +1,56 @@
+{
+  "generator-jhipster": {
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0"
+      }
+    ],
+    "applicationType": "monolith",
+    "baseName": "smartinum",
+    "jhipsterVersion": "7.0.1",
+    "skipClient": false,
+    "skipServer": false,
+    "skipUserManagement": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "testFrameworks": [],
+    "pages": [],
+    "creationTimestamp": 1644144475251,
+    "serverPort": "8081",
+    "packageName": "com.jhipster.node",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "authenticationType": "jwt",
+    "clientFramework": "react",
+    "withAdminUi": true,
+    "clientTheme": "none",
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "packageFolder": "com/jhipster/node",
+    "jwtSecretKey": "ODY5ZGQ3MTVhMWQxNDM4MmJkMzBiNDZkMTBjOGNiZTEzZGRhOTkyNTI0Y2YyZTcxOWRmNjU1OWM5MTRlYTliMTAwMGU0Mjg2MDA4NTI4M2MxNTlmNWQ2MzBiNzYxZTFlYWQxMTk4MDhkZjIxNWJlMTk2NGMxOTM3OWFjNzdmMjU=",
+    "serviceDiscoveryType": false,
+    "websocket": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "enableHibernateCache": false,
+    "clientPackageManager": "npm",
+    "clientThemeVariant": "",
+    "cacheProvider": "ehcache",
+    "buildTool": "maven",
+    "reactive": false,
+    "languages": ["en", "fr"],
+    "entities": ["Home", "Room", "Permission", "Device", "Log", "Controller", "Sensor"],
+    "lastLiquibaseTimestamp": 1644155904000
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Permission",
+  "fields": [
+    {
+      "fieldName": "permission",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "permission",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20220206134158"
+}

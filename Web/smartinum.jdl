@@ -1,0 +1,38 @@
+entity HomePage {
+	name String
+    location String
+}
+
+entity Room {
+	name String
+}
+
+entity Permission {
+	permission String
+}
+
+entity Device {
+	status Status
+    type String
+    pin Integer
+}
+
+enum Status {
+	ON, OFF
+}
+
+entity Log {
+	description String
+    createdAt LocalDate
+}
+
+entity Controller {
+	uuid String
+}
+
+entity Sensor {
+	type String
+    pin Integer
+}
+
+
