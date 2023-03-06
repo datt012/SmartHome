@@ -111,7 +111,7 @@ export default  ({navigation}) => {
                                 marginVertical: 20,
                             }}
                             buttonStyle={{
-                                backgroundColor: '#FF0000',
+                                backgroundColor: '#9b7e67',
                                 borderRadius: 100 / 2
                             }}
                             titleStyle={{
@@ -130,7 +130,7 @@ export default  ({navigation}) => {
                             }}
                             title="Sign up"
                             type="clear"
-                            titleStyle={{color: '#FD9A3F'}}
+                            titleStyle={{color: '#9b7e67'}}
                             onPress={() => navigation.navigate("Sign_up")}
                         />
                     </View>
@@ -150,9 +150,9 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 38,
         lineHeight: 50,
-        color: '#a43441',
+        color: '#9b7e67',
         alignItems: 'flex-end',
-       // marginLeft: 20,
+        marginLeft: 20,
         textAlign: 'center',
     },
     container: {

@@ -64,7 +64,7 @@ export default ({navigation}) => {
 
     return (
         <ScrollView>
-            <Header title={"House"} back={false} navigation={navigation}/>
+            <Header title={"House"} color="#9BC8D1" back={false} navigation={navigation}/>
             <Text style={styles.text}>
                 Home
             </Text>
@@ -145,7 +145,7 @@ export default ({navigation}) => {
                                     }}
                                     onPress={handleDeleteHome}
                                     buttonStyle={{
-                                        backgroundColor: '#FD9A3F',
+                                        backgroundColor: '#9BC8D1',
                                         borderRadius: 100 / 2
                                     }}
                                     titleStyle={{
@@ -163,7 +163,7 @@ export default ({navigation}) => {
                                     title="Cancel"
                                     type="clear"
                                     onPress={toggleDeleteOverlay}
-                                    titleStyle={{color: '#FD9A3F'}}
+                                    titleStyle={{color: '#9BC8D1'}}
                                 />
                             </View>
                         </View>
@@ -183,7 +183,7 @@ const styles = StyleSheet.create({
         flexWrap: "wrap",
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 100 / 5
+        borderRadius: 100 / 5,
 
     },
     main: {
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         padding: 20,
-        color: "#FD9A3F"
+        color: "#9b7e67"
     },
     inputText: {
         borderColor: "black",
@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 30,
         lineHeight: 50,
-        color: '#FD9A3F',
+        color: '#9b7e67',
         alignItems: 'flex-end',
         marginLeft: 20,
     },
