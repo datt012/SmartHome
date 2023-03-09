@@ -39,7 +39,7 @@ export default ({navigation}) => {
         }
     }
     return (
-        <ScrollView>
+        //<ScrollView style={styles.container}>
             <View style={styles.container}>
                 <View style={styles.container}>
                     <View>
@@ -124,7 +124,7 @@ export default ({navigation}) => {
 
                 </View>
             </View>
-        </ScrollView>
+       // </ScrollView>
 
     );
 
