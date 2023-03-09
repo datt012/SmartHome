@@ -45,7 +45,7 @@ export default ({navigation}) => {
             <Header title={""} navigation={navigation}/>
             <View>
                 <Text style={styles.textName}>
-                    Thông tin tài khoản
+                    Profile
                 </Text>
 
                 <View style={styles.info}>
