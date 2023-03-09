@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
   Pusher.logToConsole = true;
 }
 
-export const pusher = new Pusher('cf76f2b2b00aee9a32ae', {
+export const pusher = new Pusher('b2af1eee963f78f9a768', {
   cluster: 'ap1',
   authorizer(channel, _) {
     return {
