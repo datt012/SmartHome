@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         padding: 20,
-        color: "#FD9A3F"
+        color: "#9BC8D1"
     },
     inputText: {
         borderColor: "black",

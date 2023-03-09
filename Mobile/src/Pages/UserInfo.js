@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 20,
         lineHeight: 50,
-        color: '#FD9A3F',
+        color: '#9b7e67',
         alignItems: 'flex-start',
         marginLeft: 20,
     },
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     },
     text: {
         paddingLeft: 20,
-        color: '#FD9A3F',
+        color: '#9b7e67',
         fontSize: 14,
         fontWeight: "bold",
     },

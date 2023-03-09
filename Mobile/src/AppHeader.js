@@ -48,7 +48,7 @@ const AppHeader = (props) => {
     return (
         <View>
             <StatusBar barStyle="light-content" hidden={false} backgroundColor="#B5F7D3" translucent={true}/>
-            <Header backgroundColor='#FD9A3F'
+            <Header backgroundColor='#696969'
                     leftComponent={
                         <TouchableOpacity >
                             {

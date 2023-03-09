@@ -39,7 +39,7 @@ export default ({navigation}) => {
         }
     }
     return (
-        <ScrollView>
+        //<ScrollView style={styles.container}>
             <View style={styles.container}>
                 <View style={styles.container}>
                     <View>
@@ -98,7 +98,7 @@ export default ({navigation}) => {
                                     marginVertical: 20,
                                 }}
                                 buttonStyle={{
-                                    backgroundColor: '#FD9A3F',
+                                    backgroundColor: '#9b7e67',
                                     borderRadius: 100 / 2
                                 }}
                                 titleStyle={{
@@ -116,7 +116,7 @@ export default ({navigation}) => {
                                 }}
                                 title="Cancel"
                                 type="clear"
-                                titleStyle={{color: '#FD9A3F'}}
+                                titleStyle={{color: '#9b7e67'}}
                                 onPress={() => navigation.navigate('Log_in')}
                             />
                         </View>
@@ -124,7 +124,7 @@ export default ({navigation}) => {
 
                 </View>
             </View>
-        </ScrollView>
+       // </ScrollView>
 
     );
 
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 38,
         lineHeight: 50,
-        color: '#FD9A3F',
+        color: '#9b7e67',
         alignItems: 'flex-end',
         marginLeft: 20,
     },
@@ -158,6 +158,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignContent: "center",
         alignItems: "center",
+        backgroundColor: "#9BC8D1",
     },
 });
 

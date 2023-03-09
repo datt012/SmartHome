@@ -67,7 +67,7 @@ export default  ({navigation}) => {
         <View style={styles.container}>
             <View style={styles.container}>
                 <View>
-                    <Text style={styles.textName}>Smartinum</Text>
+                    <Text style={styles.textName}>SmartHome</Text>
                     <View style={styles.inputWrapper}>
                         <TextInput style={styles.inputText}
                                    onChangeText={(value) => handleInput("username", value)}
@@ -111,7 +111,7 @@ export default  ({navigation}) => {
                                 marginVertical: 20,
                             }}
                             buttonStyle={{
-                                backgroundColor: '#FD9A3F',
+                                backgroundColor: '#9b7e67',
                                 borderRadius: 100 / 2
                             }}
                             titleStyle={{
@@ -130,7 +130,7 @@ export default  ({navigation}) => {
                             }}
                             title="Sign up"
                             type="clear"
-                            titleStyle={{color: '#FD9A3F'}}
+                            titleStyle={{color: '#9b7e67'}}
                             onPress={() => navigation.navigate("Sign_up")}
                         />
                     </View>
@@ -150,16 +150,17 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 38,
         lineHeight: 50,
-        color: '#FD9A3F',
+        color: '#9b7e67',
         alignItems: 'flex-end',
         marginLeft: 20,
+        textAlign: 'center',
     },
     container: {
         flex: 1,
         justifyContent: "center",
         alignContent: "center",
         alignItems: "center",
-
+        backgroundColor: "#9BC8D1"
     },
     inputWrapper: {
         display: "flex",

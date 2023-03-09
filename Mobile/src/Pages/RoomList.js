@@ -146,7 +146,7 @@ export default ({route,navigation}) => {
                                         marginVertical: 20,
                                     }}
                                     buttonStyle={{
-                                        backgroundColor: '#FD9A3F',
+                                        backgroundColor: '#9BC8D1',
                                         borderRadius: 100 / 2
                                     }}
                                     titleStyle={{
@@ -164,7 +164,7 @@ export default ({route,navigation}) => {
                                     title="Cancel"
                                     onPress={toggleDeleteOverlay}
                                     type="clear"
-                                    titleStyle={{color: '#FD9A3F'}}
+                                    titleStyle={{color: '#9b7e67'}}
                                 />
                             </View>
                         </View>
@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         padding: 20,
-        color: "#FD9A3F"
+        color: "#9BC8D1"
     },
     inputText: {
         borderColor: "black",
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 30,
         lineHeight: 50,
-        color: '#FD9A3F',
+        color: '#9b7e67',
         alignItems: 'flex-end',
         marginLeft: 20,
     },
