@@ -45,7 +45,7 @@ export default ({navigation}) => {
             <Header title={""} navigation={navigation}/>
             <View>
                 <Text style={styles.textName}>
-                    Profile
+                    Infomation
                 </Text>
 
                 <View style={styles.info}>
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
         lineHeight: 50,
         color: '#9b7e67',
         alignItems: 'flex-start',
-        marginLeft: 20,
+        textAlign: 'center',
     },
 
     info: {

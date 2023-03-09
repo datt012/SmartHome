@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
         lineHeight: 50,
         color: '#9b7e67',
         alignItems: 'flex-end',
-        marginLeft: 20,
+        textAlign: 'center',
     },
     container: {
         flex: 1,

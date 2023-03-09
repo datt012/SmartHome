@@ -43,13 +43,13 @@ export default ({navigation}) => {
             <Header title={""} navigation={navigation}/>
             <View>
                 <Text style={styles.textName}>
-                    Thông tin tài khoản
+                    Change Password
                 </Text>
 
                 <View style={styles.info}>
                     <View>
                         <Text style={styles.text}>
-                            current password
+                            Current password
                         </Text>
                         <TextInput style={styles.inputText}
 
@@ -57,7 +57,7 @@ export default ({navigation}) => {
                         />
 
                         <Text style={styles.text}>
-                            new password
+                            New password
                         </Text>
                         <TextInput style={styles.inputText}
 
@@ -65,7 +65,7 @@ export default ({navigation}) => {
                         />
 
                         <Text style={styles.text}>
-                            confirm new password
+                            Confirm new password
                         </Text>
                         <TextInput style={styles.inputText}
 
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
         lineHeight: 50,
         color: '#9b7e67',
         alignItems: 'flex-start',
-        marginLeft: 20,
+        textAlign: 'center',
     },
 
     info: {
