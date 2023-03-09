@@ -9,7 +9,7 @@ export default (prop) => {
             <View style={styles.container}>
                 <Icon name='add-circle-outline'
                       type='ionicon'
-                      color='#FD9A3F'
+                      color='#9BC8D1'
                       size={40}
                       style={styles.icon}>
                 </Icon>

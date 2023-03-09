@@ -64,7 +64,7 @@ export default ({navigation}) => {
 
     return (
         <ScrollView>
-            <Header title={"House"} color="#9BC8D1" back={false} navigation={navigation}/>
+            <Header title={"House"} style={{backgroundColor: "#9BC8D1"}} /*backgroundColor="#9BC8D1"*/ back={false} navigation={navigation}/>
             <Text style={styles.text}>
                 Home
             </Text>
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         padding: 20,
-        color: "#9b7e67"
+        color: "#9BC8D1"
     },
     inputText: {
         borderColor: "black",
