@@ -21,7 +21,7 @@ extern "C" {
 
 // Temperature MQTT Topics
 // #define MQTT_PUB_TEMP "6215de342aa1ab04d8b8e37d/sensors/6215de482aa1ab04d8b8e380"
-#define MQTT_PUB_TEMP "63f77eac783cef3d706c3326/sensors/63f77ee9783cef3d706c3329"
+#define MQTT_PUB_TEMP "640d4c75a2b2ba23e07ecb4e/sensors/640dbdd7a9e8e10e90f5e1e3"
 
 
 // Digital pin connected to the DHT sensor
@@ -84,11 +84,11 @@ void onMqttConnect(bool sessionPresent) {
     Serial.println(sessionPresent);
     // pin 13
     // uint16_t packetIdSub = mqttClient.subscribe("6215de342aa1ab04d8b8e37d/devices/6215de3b2aa1ab04d8b8e37e", 0);
-    uint16_t packetIdSub = mqttClient.subscribe("63f77eac783cef3d706c3326/devices/63f77ed5783cef3d706c3327", 0);
+    uint16_t packetIdSub = mqttClient.subscribe("640d4c75a2b2ba23e07ecb4e/devices/640dbdb6a9e8e10e90f5e1e1", 0);
 
     // pin 12
     // uint16_t packetIdSub1 = mqttClient.subscribe("6215de342aa1ab04d8b8e37d/devices/6215de412aa1ab04d8b8e37f", 0);
-    uint16_t packetIdSub1 = mqttClient.subscribe("63f77eac783cef3d706c3326/devices/63f77edd783cef3d706c3328", 0);
+    uint16_t packetIdSub1 = mqttClient.subscribe("640d4c75a2b2ba23e07ecb4e/devices/640dbdcba9e8e10e90f5e1e2", 0);
 
 }
 
