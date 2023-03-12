@@ -5,23 +5,10 @@ import {Icon} from 'react-native-elements';
 export default (props) => {
     return (
         <View>
-
-            {/*<View style={styles.container}>*/}
-            {/*    <Icon name="fan"*/}
-            {/*          type="material-community"*/}
-            {/*          color="#FD9A3F"*/}
-            {/*          size={100}*/}
-            {/*          style={styles.icon}>*/}
-            {/*    </Icon>*/}
-            {/*</View>*/}
-            {/*<Text style={styles.text}>*/}
-            {/*    Fan*/}
-            {/*</Text>*/}
-
             <View style={styles.container}>
                 <Icon name="ceiling-light"
                       type="material-community"
-                      color="#FD9A3F"
+                      color="#9BC8D1"
                       size={100}
                       style={styles.icon}>
                 </Icon>
@@ -29,18 +16,6 @@ export default (props) => {
             <Text style={styles.text}>
                 Light
             </Text>
-
-            {/*<View style={styles.container}>*/}
-            {/*    <Icon name="door"*/}
-            {/*          type="material-community"*/}
-            {/*          color="#FD9A3F"*/}
-            {/*          size={100}*/}
-            {/*          style={styles.icon}>*/}
-            {/*    </Icon>*/}
-            {/*</View>*/}
-            {/*<Text style={styles.text}>*/}
-            {/*    Door*/}
-            {/*</Text>*/}
         </View>
 
     )
@@ -52,7 +27,6 @@ const styles = StyleSheet.create({
         width: 100,
         borderRadius: 100 / 5,
         alignContent: 'center',
-        // backgroundColor: '#FD9A3F',
         justifyContent: "center",
         alignSelf: 'center',
         alignItems: 'center'
@@ -60,8 +34,6 @@ const styles = StyleSheet.create({
     icon: {
         alignSelf: 'center',
         alignItems: 'center'
-        // backgroundColor: '#FD9A3F',
-
 
     },
     text: {
@@ -69,8 +41,5 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         alignItems: 'center',
         fontSize: 50
-        // backgroundColor: '#FD9A3F',
-
-
     }
 })

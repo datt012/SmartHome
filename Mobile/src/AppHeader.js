@@ -73,13 +73,13 @@ const AppHeader = (props) => {
                                      backdropStyle={styles.backdrop}
                             >
                                 <TouchableOpacity style={styles.button} >
-                                    <Text onPress= {openUserInfo} style={{fontSize:20}}>User info</Text>
+                                    <Text onPress= {openUserInfo} style={{fontSize:20}}>User Info</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.button} >
                                     <Text onPress= {openChangePassword} style={{fontSize:20}}>Change Password</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity style={styles.button}>
-                                    <Text onPress={handleLogOut} style={{fontSize:20}}>Log out</Text>
+                                    <Text onPress={handleLogOut} style={{fontSize:20}}>Log Out</Text>
                                 </TouchableOpacity>
                             </Overlay>
                         </>

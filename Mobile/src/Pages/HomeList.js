@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {ActivityIndicator, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
 import Header from "../AppHeader";
 import AddButton from "../Components/Button/AddButton";
-import HouseButton from "../Components/Button/HouseButton";
+import HomeButton from "../Components/Button/HomeButton";
 import {Button, Icon, Overlay} from "react-native-elements";
 import {useAddHomeMutation, useDeleteHomeMutation, useGetHomesQuery} from "../services/home/home";
 import {useSelector} from "react-redux";
@@ -64,7 +64,7 @@ export default ({navigation}) => {
 
     return (
         <ScrollView>
-            <Header title={"House"} style={{backgroundColor: "#9BC8D1"}} /*backgroundColor="#9BC8D1"*/ back={false} navigation={navigation}/>
+            <Header title={"Smarthome"} style={{backgroundColor: "#9BC8D1"}} back={false} navigation={navigation}/>
             <Text style={styles.text}>
                 Home
             </Text>
@@ -79,7 +79,7 @@ export default ({navigation}) => {
                                 <TouchableOpacity key={home.id} style={styles.item}
                                                   onLongPress={() => handleLongPressButton(home.id)}
                                                   onPress={() => openRoomList(home.id, home.name)}>
-                                    <HouseButton name={home.name} homeId={home.id}/>
+                                    <HomeButton name={home.name} homeId={home.id}/>
                                 </TouchableOpacity>
                             )
                         })
@@ -93,10 +93,10 @@ export default ({navigation}) => {
                     <Overlay isVisible={visible} onBackdropPress={toggleOverlay}>
                         <View style={styles.form}>
                             <Text style={styles.textName} onPress={handleAddHome}>
-                                Add House
+                                Add Home
                             </Text>
                             <TextInput style={styles.inputText}
-                                       placeholder="House name"
+                                       placeholder="Home name"
                                        onChangeText={(value) => handleInput("name", value)}
                             />
                             <TextInput style={styles.inputText}
@@ -108,13 +108,13 @@ export default ({navigation}) => {
                                 flexDirection: "row",
                                 alignContent: 'center',
                                 alignItems: 'center',
-                                backgroundColor: '#FD9A3F',
+                                backgroundColor: '#9BC8D1',
                                 borderRadius: 100 / 50
 
                             }}>
                                 <Button
                                     buttonStyle={{
-                                        backgroundColor: 'rgba(253, 154, 63, 1)',
+                                        backgroundColor: '#9BC8D1',
                                         borderRadius: 30,
                                     }}
                                     borderRadius={100 / 50}
@@ -224,7 +224,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 30,
         lineHeight: 50,
-        color: '#9b7e67',
+        color: '#9BC8D1',
         alignItems: 'flex-end',
         marginLeft: 20,
     },

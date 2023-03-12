@@ -12,7 +12,7 @@ import {
     useGetDevicesQuery,
     usePutDeviceMutation
 } from "../services/device/device";
-import HouseButton from "../Components/Button/HouseButton";
+import HomeButton from "../Components/Button/HomeButton";
 import {useGetControllersQuery} from "../services/controller/controller";
 
 
@@ -116,13 +116,13 @@ export default ({navigation, controllerId}) => {
                                 flexDirection: "row",
                                 alignContent: 'center',
                                 alignItems: 'center',
-                                backgroundColor: '#FD9A3F',
+                                backgroundColor: '#9BC8D1',
                                 borderRadius: 100 / 50
 
                             }}>
                                 <Button
                                     buttonStyle={{
-                                        backgroundColor: 'rgba(253, 154, 63, 1)',
+                                        backgroundColor: '#9BC8D1',
                                         borderRadius: 30,
                                     }}
                                     borderRadius={100 / 50}
@@ -158,7 +158,7 @@ export default ({navigation, controllerId}) => {
                                         marginVertical: 20,
                                     }}
                                     buttonStyle={{
-                                        backgroundColor: '#FD9A3F',
+                                        backgroundColor: '#9BC8D1',
                                         borderRadius: 100 / 2
                                     }}
                                     titleStyle={{
@@ -176,7 +176,7 @@ export default ({navigation, controllerId}) => {
                                     title="Cancel"
                                     onPress={toggleDeleteOverlay}
                                     type="clear"
-                                    titleStyle={{color: '#FD9A3F'}}
+                                    titleStyle={{color: '#9BC8D1'}}
                                 />
                             </View>
                         </View>
@@ -233,7 +233,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 25,
         lineHeight: 50,
-        color: '#FD9A3F',
+        color: '#9BC8D1',
         alignItems: 'flex-end',
         marginLeft: 20,
     },

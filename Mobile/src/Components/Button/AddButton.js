@@ -16,7 +16,7 @@ export default (prop) => {
 
             </View>
             <Text style={styles.text}>
-                Add one
+                Add
             </Text>
         </View>
 
@@ -35,8 +35,6 @@ const styles = StyleSheet.create({
     icon: {
         alignSelf: 'center',
         alignItems: 'center'
-        // backgroundColor: '#FD9A3F',
-
 
     },
     text: {

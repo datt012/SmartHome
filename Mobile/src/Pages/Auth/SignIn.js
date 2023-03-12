@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Button} from 'react-native-elements';
 import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View,ActivityIndicator} from "react-native";
 import {useSignInMutation} from "../../services/auth/auth";
-import {useGetHomeByIdQuery, useGetHomesQuery} from "../../services/home/home";
 import { AsyncStorage } from 'react-native';
 import {useDispatch} from "react-redux";
 import {setCredentials} from "../../services/auth/authSlice";
@@ -34,11 +33,9 @@ export default  ({navigation}) => {
         try {
             const value = await AsyncStorage.getItem('token');
             if (value !== null) {
-                // We have data!!
                 console.log(value);
             }
         } catch (error) {
-            // Error retrieving data
         }
     };
     const handleInput = (type, value) => {
@@ -58,7 +55,6 @@ export default  ({navigation}) => {
         try {
             await signIn(inputState).unwrap();
             await _storeData();
-            // navigation.navigate("Home");
         } catch (err) {
             console.log(err)
         }
@@ -68,7 +64,7 @@ export default  ({navigation}) => {
             <View style={styles.container}>
                 {isLoading? <ActivityIndicator size={'large'}/> : null}
                 <View>
-                    <Text style={styles.textName}>SmartHome</Text>
+                    <Text style={styles.textName}>Smarthome</Text>
                     <View style={styles.inputWrapper}>
                         <TextInput style={styles.inputText}
                                    onChangeText={(value) => handleInput("username", value)}
@@ -112,8 +108,7 @@ export default  ({navigation}) => {
                                 marginVertical: 20,
                             }}
                             buttonStyle={{
-                                backgroundColor: '#9b7e67',
-                                borderRadius: 100 / 2
+                                backgroundColor: '#9b7e67'
                             }}
                             titleStyle={{
                                 color: 'white',
@@ -123,15 +118,21 @@ export default  ({navigation}) => {
 
                         />
                         <Button
+                            title="Sign up"
                             containerStyle={{
                                 flex: 1,
                                 width: 100,
                                 marginHorizontal: 20,
                                 marginVertical: 20,
                             }}
-                            title="Sign up"
                             type="clear"
-                            titleStyle={{color: '#9b7e67'}}
+                            buttonStyle={{
+                                backgroundColor: '#9b7e67'
+                            }}
+                            titleStyle={{
+                                color: 'white',
+                                marginHorizontal: 20,
+                            }}
                             onPress={() => navigation.navigate("Sign_up")}
                         />
                     </View>

@@ -5,7 +5,6 @@ import AddButton from "../Components/Button/AddButton";
 import RoomButton from "../Components/Button/RoomButton";
 import {Button, Icon, Overlay} from "react-native-elements";
 import {useAddRoomMutation, useDeleteRoomMutation, useGetRoomsQuery} from "../services/room/room";
-import {useDeleteDeviceMutation} from "../services/device/device";
 
 export default ({route,navigation}) => {
 
@@ -101,13 +100,13 @@ export default ({route,navigation}) => {
                                         flexDirection: "row",
                                         alignContent: 'center',
                                         alignItems: 'center',
-                                        backgroundColor: '#FD9A3F',
+                                        backgroundColor: '#9BC8D1',
                                         borderRadius: 100 / 50
 
                                     }}>
                                         <Button
                                             buttonStyle={{
-                                                backgroundColor: 'rgba(253, 154, 63, 1)',
+                                                backgroundColor: '#9BC8D1',
                                                 borderRadius: 30,
                                             }}
                                             borderRadius={100 / 50}
@@ -165,7 +164,7 @@ export default ({route,navigation}) => {
                                     title="Cancel"
                                     onPress={toggleDeleteOverlay}
                                     type="clear"
-                                    titleStyle={{color: '#9b7e67'}}
+                                    titleStyle={{color: '#9BC8D1'}}
                                 />
                             </View>
                         </View>
@@ -224,7 +223,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 30,
         lineHeight: 50,
-        color: '#9b7e67',
+        color: '#9BC8D1',
         alignItems: 'flex-end',
         marginLeft: 20,
     },

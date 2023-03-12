@@ -94,7 +94,7 @@ export default ({navigation}) => {
                                    errorMessage="Not a valid"
                         />
                         <View>
-                            <Button title="Save" color="#FD9A3F" onPress={handleSubmit}/>
+                            <Button title="Save" color="#9BC8D1" onPress={handleSubmit}/>
                         </View>
                     </View>
                 </View>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button} from 'react-native-elements';
-import {ScrollView, StyleSheet, Text, TextInput, View,ActivityIndicator} from "react-native";
+import {StyleSheet, Text, TextInput, View,ActivityIndicator} from "react-native";
 import {useSignUpMutation} from "../../services/auth/auth";
 
 
@@ -39,7 +39,6 @@ export default ({navigation}) => {
         }
     }
     return (
-        //<ScrollView style={styles.container}>
             <View style={styles.container}>
              {isLoading? <ActivityIndicator size={'large'}/> : null}
                 <View style={styles.container}>
@@ -100,7 +99,6 @@ export default ({navigation}) => {
                                 }}
                                 buttonStyle={{
                                     backgroundColor: '#9b7e67',
-                                    borderRadius: 100 / 2
                                 }}
                                 titleStyle={{
                                     color: 'white',
@@ -109,15 +107,21 @@ export default ({navigation}) => {
                                 onPress={handleSignUp}
                             />
                             <Button
+                                title="Cancel"
                                 containerStyle={{
                                     flex: 1,
                                     width: 100,
                                     marginHorizontal: 20,
                                     marginVertical: 20,
                                 }}
-                                title="Cancel"
                                 type="clear"
-                                titleStyle={{color: '#9b7e67'}}
+                                buttonStyle={{
+                                    backgroundColor: '#9b7e67',
+                                }}
+                                titleStyle={{
+                                    color: 'white',
+                                    marginHorizontal: 20,
+                                }}
                                 onPress={() => navigation.navigate('Log_in')}
                             />
                         </View>
@@ -125,8 +129,6 @@ export default ({navigation}) => {
 
                 </View>
             </View>
-       // </ScrollView>
-
     );
 
 };

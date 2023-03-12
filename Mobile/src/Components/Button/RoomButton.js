@@ -33,16 +33,10 @@ const styles = StyleSheet.create({
     icon: {
         alignSelf: 'center',
         alignItems: 'center'
-        // backgroundColor: '#FD9A3F',
-
-
     },
     text: {
         paddingTop: 10,
         alignSelf: 'center',
         alignItems: 'center'
-        // backgroundColor: '#FD9A3F',
-
-
     }
 })

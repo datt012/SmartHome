@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import AppHeader from "../AppHeader";
-import {Tab, TabView, Text} from "react-native-elements";
+import {Tab, TabView} from "react-native-elements";
 import DeviceList from "./DeviceList";
-import SenSorList from "./SenSorList";
-import {useGetSensorsQuery} from "../services/sensor/sensor";
-import {useGetDevicesQuery} from "../services/device/device";
+import SenSorList from "./SensorList";
+
 
 export default ({route, navigation}) => {
     const {controllerId, controllerName} = route.params;

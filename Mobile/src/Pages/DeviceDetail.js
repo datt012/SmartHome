@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {StyleSheet, Switch, Text, TextInput, TouchableOpacity, View} from "react-native";
 import AppHeader from "../AppHeader";
-import {Button, Icon, Overlay} from "react-native-elements";
-import ModalSelector from 'react-native-modal-selector'
 import DeviceController from "../Components/Button/DeviceController";
 import {getClient} from "../setupMqtt"
 import {
@@ -76,7 +74,7 @@ export default (props) => {
                         </Text>
                         <Switch
                             trackColor={{false: "#767577", true: "#81b0ff"}}
-                            thumbColor={isEnable ? "#FD9A3F" : "#f4f3f4"}
+                            thumbColor={isEnable ? "#9BC8D1" : "#f4f3f4"}
                             onValueChange={handleChangeStatus}
                             value={isEnable}
                             style={{transform: [{scaleX: 1.5}, {scaleY: 1.5}]}}
@@ -117,7 +115,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         padding: 20,
-        color: "#FD9A3F"
+        color: "#9BC8D1"
     },
     inputText: {
         borderColor: "black",
@@ -136,7 +134,7 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 25,
         lineHeight: 50,
-        color: '#FD9A3F',
+        color: '#9BC8D1',
         alignItems: 'flex-end',
         marginLeft: 20,
     },
