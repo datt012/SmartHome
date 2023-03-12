@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {StyleSheet, Text, TextInput, TouchableOpacity, View, ActivityIndicator} from "react-native";
 import AppHeader from "../AppHeader";
 import Add_button from "../Components/Button/AddButton";
 import DeviceButton from "../Components/Button/DeviceButton";
@@ -28,7 +28,7 @@ export default ({navigation,controllerId}) => {
     const [visible, setVisible] = useState(false);
     const [deleteVisible, setDeleteVisible] = useState(false);
     const [sensorDeleteId, setSensorDeleteId] = useState("");
-    const [addSensor] = useAddSensorMutation();
+    const [addSensor,{isLoading}] = useAddSensorMutation();
     const [deleteSensor] = useDeleteSensorMutation();
 
     const toggleDeleteOverlay = () => {
@@ -83,6 +83,7 @@ export default ({navigation,controllerId}) => {
             <Text style={styles.text}>
                 Sensor List
             </Text>
+                        {isLoading? <ActivityIndicator size={'large'}/> : null}
             <View style={styles.container}>
                 <View style={styles.main}>
                     {

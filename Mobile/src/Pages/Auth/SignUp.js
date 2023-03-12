@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button} from 'react-native-elements';
-import {ScrollView, StyleSheet, Text, TextInput, View} from "react-native";
+import {ScrollView, StyleSheet, Text, TextInput, View,ActivityIndicator} from "react-native";
 import {useSignUpMutation} from "../../services/auth/auth";
 
 
@@ -41,6 +41,7 @@ export default ({navigation}) => {
     return (
         //<ScrollView style={styles.container}>
             <View style={styles.container}>
+             {isLoading? <ActivityIndicator size={'large'}/> : null}
                 <View style={styles.container}>
                     <View>
                         <Text style={styles.textName}>

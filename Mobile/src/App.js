@@ -32,7 +32,7 @@ const MyStack = () => {
                 {
                     isLogin ? (
                         <>
-                            <Stack.Screen name="Home" component={HomeList}/>
+                            <Stack.Screen name="Home" component={HomeList} />
                             <Stack.Screen name="User_info" component={UserInfo}/>
                             <Stack.Screen name="Change_password" component={ChangePassword}/>
                             <Stack.Screen name="Room" component={RoomList}/>

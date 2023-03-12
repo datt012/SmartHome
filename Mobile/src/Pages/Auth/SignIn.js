@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Button} from 'react-native-elements';
-import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {Image, StyleSheet, Text, TextInput, TouchableOpacity, View,ActivityIndicator} from "react-native";
 import {useSignInMutation} from "../../services/auth/auth";
 import {useGetHomeByIdQuery, useGetHomesQuery} from "../../services/home/home";
 import { AsyncStorage } from 'react-native';
@@ -58,7 +58,7 @@ export default  ({navigation}) => {
         try {
             await signIn(inputState).unwrap();
             await _storeData();
-            navigation.navigate("Home");
+            // navigation.navigate("Home");
         } catch (err) {
             console.log(err)
         }
@@ -66,6 +66,7 @@ export default  ({navigation}) => {
     return (
         <View style={styles.container}>
             <View style={styles.container}>
+                {isLoading? <ActivityIndicator size={'large'}/> : null}
                 <View>
                     <Text style={styles.textName}>SmartHome</Text>
                     <View style={styles.inputWrapper}>

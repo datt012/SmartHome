@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View, ActivityIndicator} from "react-native";
 import Header from "../AppHeader";
 import AddButton from "../Components/Button/AddButton";
 import RoomButton from "../Components/Button/RoomButton";
@@ -17,7 +17,7 @@ export default ({route,navigation}) => {
     const {homeId,homeName} = route.params;
     const [roomDeleteId,setRoomDeleteId] = useState("");
     const {data} = useGetRoomsQuery({homeId});
-    const [addRoom] = useAddRoomMutation();
+    const [addRoom, {isLoading}] = useAddRoomMutation();
     const [deleteRoom] = useDeleteRoomMutation();
     const [deleteVisible, setDeleteVisible] = useState(false);
     const toggleDeleteOverlay = () => {
@@ -68,6 +68,7 @@ export default ({route,navigation}) => {
             <Text style={styles.text}>
                 Room
             </Text>
+            {isLoading? <ActivityIndicator size={'large'}/> : null}
             <View style={styles.container}>
                 <View style={styles.main}>
                     {

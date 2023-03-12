@@ -5,7 +5,7 @@ import {
     useDeleteControllerMutation,
     useGetControllersQuery
 } from "../services/controller/controller";
-import {ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View, ActivityIndicator} from "react-native";
 import AppHeader from "../AppHeader";
 import {Button, Icon, Overlay} from "react-native-elements";
 import Header from "../AppHeader";
@@ -17,7 +17,7 @@ export default ({route, navigation}) => {
     const [visible, setVisible] = useState(false);
     const [deleteVisible, setDeleteVisible] = useState(false);
     const [controllerDeleteId,setControllerDeleteId] = useState("");
-    const [addController] = useAddControllerMutation();
+    const [addController, {isLoading}] = useAddControllerMutation();
     const [deleteController] = useDeleteControllerMutation();
     const [controllerActive,setControllerActive] = useState("");
     const [controllerName,setControllerName] = useState("");
@@ -69,6 +69,7 @@ export default ({route, navigation}) => {
             <Text style={styles.text}>
                 Controller
             </Text>
+            {isLoading? <ActivityIndicator size={'large'}/> : null}
             <View style={styles.container}>
                 <View style={styles.main}>
                     {

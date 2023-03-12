@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {ActivityIndicator, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
 import Header from "../AppHeader";
 import AddButton from "../Components/Button/AddButton";
 import HouseButton from "../Components/Button/HouseButton";
@@ -11,13 +11,13 @@ import {useSelector} from "react-redux";
 export default ({navigation}) => {
     const [visible, setVisible] = useState(false);
 
-    const {data} = useGetHomesQuery();
+    const {data, isLoading1} = useGetHomesQuery();
     const initState = {
         name: "",
         location: "",
     };
     const [inputState, setInputState] = useState(initState);
-    const [addHome] = useAddHomeMutation();
+    const [addHome, {isLoading}] = useAddHomeMutation();
     const [deleteHome] = useDeleteHomeMutation();
     const [deleteVisible, setDeleteVisible] = useState(false);
     const [homeDeleteId, setHomeDeleteId] = useState("");
@@ -68,9 +68,12 @@ export default ({navigation}) => {
             <Text style={styles.text}>
                 Home
             </Text>
+            {isLoading? <ActivityIndicator size={'large'}/> : null}
+            {isLoading1? <ActivityIndicator size={'large'}/> : null}
+
             <View style={styles.container}>
                 <View style={styles.main}>
-                    {
+                    { data? (
                         data?.map(home => {
                             return (
                                 <TouchableOpacity key={home.id} style={styles.item}
@@ -80,6 +83,8 @@ export default ({navigation}) => {
                                 </TouchableOpacity>
                             )
                         })
+                        ): <ActivityIndicator size={'large'}/>
+
                     }
 
                     <TouchableOpacity style={styles.item} onPress={toggleOverlay}>

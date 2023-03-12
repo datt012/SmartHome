@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {StyleSheet, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {StyleSheet, Text, TextInput, TouchableOpacity, View, ActivityIndicator} from "react-native";
 import AppHeader from "../AppHeader";
 import Add_button from "../Components/Button/AddButton";
 import DeviceButton from "../Components/Button/DeviceButton";
@@ -28,7 +28,7 @@ export default ({navigation, controllerId}) => {
     const [deleteVisible, setDeleteVisible] = useState(false);
     const [deviceDeleteId, setDeviceDeleteId] = useState("");
     const {data} = useGetDevicesQuery({controllerId});
-    const [addDevice] = useAddDeviceMutation();
+    const [addDevice, {isLoading}] = useAddDeviceMutation();
     const [deleteDevice] = useDeleteDeviceMutation();
     const toggleDeleteOverlay = () => {
         setDeleteVisible(!deleteVisible);
@@ -81,6 +81,7 @@ export default ({navigation, controllerId}) => {
             <Text style={styles.text}>
                 Device List
             </Text>
+            {isLoading? <ActivityIndicator size={'large'}/> : null}
             <View style={styles.container}>
                 <View style={styles.main}>
                     {
