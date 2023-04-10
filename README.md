@@ -5,6 +5,7 @@
 ### Install NodeJS 16.0.0
 ### Install MongoDB, MongoDB Compass
 ### Install Android Studio
+### Install Ardunio IDE
 
 In the project directory, you can run:
 
