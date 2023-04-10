@@ -1,6 +1,5 @@
 # Smarthome : Smartinum
 
-## Available Scripts
 
 ### Install NodeJS 16.0.0
 ### Install MongoDB, MongoDB Compass
