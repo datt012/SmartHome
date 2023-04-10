@@ -7,7 +7,6 @@ import {useDispatch} from "react-redux";
 import {setCredentials} from "../../services/auth/authSlice";
 
 
-
 export default  ({navigation}) => {
     const initState = {
         username: "",
