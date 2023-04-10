@@ -7,8 +7,8 @@ extern "C" {
 #include <AsyncMqttClient.h>
 #include <ArduinoJson.h>
 
-#define WIFI_SSID "Thu Trang"
-#define WIFI_PASSWORD "thutrang1998"
+#define WIFI_SSID "xxxxxxxx"
+#define WIFI_PASSWORD "xxxxxxxx"
 
 // Raspberry Pi Mosquitto MQTT Broker
 // #define MQTT_HOST "cougar.rmq.cloudamqp.com"
@@ -20,7 +20,6 @@ extern "C" {
 #define MQTT_PORT 1883
 
 // Temperature MQTT Topics
-// #define MQTT_PUB_TEMP "6215de342aa1ab04d8b8e37d/sensors/6215de482aa1ab04d8b8e380"
 #define MQTT_PUB_TEMP "640d4c75a2b2ba23e07ecb4e/sensors/640dbdd7a9e8e10e90f5e1e3"
 
 
@@ -83,11 +82,9 @@ void onMqttConnect(bool sessionPresent) {
     Serial.print("Session present: ");
     Serial.println(sessionPresent);
     // pin 13
-    // uint16_t packetIdSub = mqttClient.subscribe("6215de342aa1ab04d8b8e37d/devices/6215de3b2aa1ab04d8b8e37e", 0);
     uint16_t packetIdSub = mqttClient.subscribe("640d4c75a2b2ba23e07ecb4e/devices/640dbdb6a9e8e10e90f5e1e1", 0);
 
     // pin 12
-    // uint16_t packetIdSub1 = mqttClient.subscribe("6215de342aa1ab04d8b8e37d/devices/6215de412aa1ab04d8b8e37f", 0);
     uint16_t packetIdSub1 = mqttClient.subscribe("640d4c75a2b2ba23e07ecb4e/devices/640dbdcba9e8e10e90f5e1e2", 0);
 
 }
@@ -215,8 +212,6 @@ void loop() {
         uint16_t packetIdPub1 = mqttClient.publish(MQTT_PUB_TEMP, 1, true, payload);
 
         Serial.printf("Publishing on topic %s at QoS 1, packetId: %i ", MQTT_PUB_TEMP, packetIdPub1);
-        Serial.printf("Message: %s \n", payload);
-
-        
+        Serial.printf("Message: %s \n", payload);        
     }
 }
