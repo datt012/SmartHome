@@ -64,7 +64,7 @@ export default  ({navigation}) => {
             <View style={styles.container}>
                 {isLoading? <ActivityIndicator size={'large'}/> : null}
                 <View>
-                    <Text style={styles.textName}>Smarthome</Text>
+                    <Text style={styles.textName}>Smartinum</Text>
                     <View style={styles.inputWrapper}>
                         <TextInput style={styles.inputText}
                                    onChangeText={(value) => handleInput("username", value)}
