@@ -1,4 +1,4 @@
-# Smarthome : Smartinum
+# Smart Home : Smartinum
 
 
 ### Install NodeJS 16.0.0
